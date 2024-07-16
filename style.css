@@ -1,0 +1,46 @@
+body {
+  background-color: #181818; /* Dark background */
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  text-shadow: 0 0 10px white, 0 0 20px white; /* Glow effect */
+  font-size: 3em;
+}
+
+#password-form {
+  margin-top: 20px;
+}
+
+#password-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#password-form input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #282828;
+  color: white;
+  width: 200px;
+}
+
+#password-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50; /* Green button */
+  color: white;
+  cursor: pointer;
+}
