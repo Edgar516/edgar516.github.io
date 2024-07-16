@@ -8,7 +8,7 @@ form.addEventListener('submit', (event) => {
 
   if (password === 'echavarria516') {
     // Redirect to the actual website or display a success message
-    window.location.href = 'https://edgarchavarria.me/movies'; // Replace with your actual URL
+    window.location.href = 'movies.html'; // Replace with your actual URL
   } else {
     alert('Incorrect password!');
   }
