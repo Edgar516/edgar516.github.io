@@ -40,9 +40,17 @@ h1 {
     font-size: 3rem;
 }
 
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
 .social-links img {
     width: 50px;
-    height: 50px;
+    height: auto;
     margin: 10px;
 }
 
@@ -78,7 +86,7 @@ footer {
 .experience-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly; /* Space items evenly */
+    justify-content: space-evenly;
     gap: .1rem;
 }
 
@@ -87,7 +95,7 @@ footer {
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    width: calc(33% - 1rem); /* Three items per row */
+    width: calc(33% - 1rem);
     box-sizing: border-box;
 }
 
@@ -122,25 +130,28 @@ h2 {
     .social-links img {
         width: 30px;
     }
+    header {
+        display: none;
+    }
+    
+    nav {
+        display: none;
+    }
 
-    nav ul {
-        flex-direction: column;
-        position: absolute; 
-        right: 0;
-        padding: 1rem; 
-        background-color: #fff;
-        box-shadow: 0px 4px 8px rgba(0,0,0,0.1); 
-        border-radius: 4px;
-        z-index: 1000; 
-    }
     .experience-item {
-        width: calc(60% - 1rem); /* Two items per row on medium screens */
+        width: calc(60% - 1rem); 
     }
-}
+
+        .social-links img {
+            width: 40px; 
+            margin: 5px; 
+        }
+    }
+
 
 @media (max-width: 600px) {
     .experience-item {
-        width: calc(100% - 1rem); /* One item per row on small screens */
+        width: calc(100% - 1rem); 
     }
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
