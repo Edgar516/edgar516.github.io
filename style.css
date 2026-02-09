@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family:cursive, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, pink, lightcoral);
+    padding: 15px;
+}
+
+/* Cursive name */
+.name {
+    font-family: 'Pacifico', cursive;
+    color: hotpink;
+    font-size: 1.3em;
+}
+
+/* Card */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Images */
+.main-img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 15px;
+    margin: 15px auto;
+}
+
+button {
+    font-size: 18px;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    touch-action: manipulation;
+}
+
+/* YES button */
+#yesBtn {
+    background: linear-gradient(135deg, #ff5fa2, #ff8fc7);
+    color: white;
+    width: 220px;
+    box-shadow: 0 8px 20px rgba(255, 95, 162, 0.45);
+}
+
+#yesBtn:active {
+    transform: scale(0.96);
+    box-shadow: 0 4px 12px rgba(255, 95, 162, 0.4);
+}
+
+/* NO button */
+#noBtn {
+    background: #f1f1f1;
+    color: #444;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+
+/* Mobile tweaks */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6em;
+    }
+
+    #noBtn {
+        left: 110px;
+    }
+}
+
+.card {
+    animation: popIn 0.5s ease;
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Hearts canvas */
+#confetti {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Card stays above hearts */
+.card {
+    position: relative;
+    z-index: 1;
+}
+
+/* Body layout (celebrate page too) */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
